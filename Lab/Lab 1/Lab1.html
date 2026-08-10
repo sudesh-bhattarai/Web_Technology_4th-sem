@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Css Example</title>
+
+    <style>
+        body {
+           background-image: url('background.jpeg');
+        }
+
+        #para1 {
+            text-align: right;
+            color: green;
+        }
+
+        .center {
+            text-align: center;
+            color: blue;
+        }
+
+        h2.right {
+            text-align: right;
+            color: red;
+        }
+
+        div * {
+            background-color: pink;
+        }
+
+        h5.hidden {
+            visibility: hidden;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        li {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ID Selector -->
+    <h1 id="para1">Hello World</h1>
+    <h1>This heading will not be affected</h1>
+    <p>This paragraph will not be affected</p>
+
+    <!-- Class Selector -->
+    <h1 class="center">Center-Aligned Heading</h1>
+    <p class="center">Center-Aligned paragraph</p>
+
+    <!-- Element + Class Selector -->
+    <h2 class="right">Right-Aligned Heading</h2>
+    <h3 class="right">This Heaing is not affected</h3>
+
+    <!-- Descendant Selector -->
+    <div class="intro">
+        <p id="name">Cosmos College of Management & Technology</p>
+        <p id="address">Sitapaila,Kathmandu.</p>
+    </div>
+
+    <!-- Visibility Property -->
+    <h5 class="hidden">This heading is hidden and cannot be seen</h5>
+
+    <!-- Display: Inline-Block -->
+    <span>
+        <h1>!!!Hello Cosmos. This is span display!!!</h1>
+    </span>
+
+    <span>
+        <h1>!!!Hello World. This is span display!!!</h1>
+    </span>
+
+    <!-- Display: Inline -->
+    <li>
+        <h1>!!!HEllo Cosmos. This is block display!!!</h1>
+    </li>
+
+    <li>
+        <h1>!!!Hello BEIT. This is block display!!!</h1>
+    </li>
+
+    <h2>Compiled by Sudesh Bhattarai</h2>
+</body>
+
+</html>

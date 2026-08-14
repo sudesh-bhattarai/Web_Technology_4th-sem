@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Registration Form</h1>
+    <form id="studentForm">
+        <label>Full Name</label>
+        <input type="text" id="name"placeholder="Enter your name">
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <label>Department</label>
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>BEIT</option>
+            <option>BCA</option>
+            <option>BBS</option>
+            <option>BIM</option>
+            <option>CSIT</option>
+        </select>
+        <div class="buttons">
+            <button type="button" onclick="registerStudent()">Register Student</button>
+            <button type="reset" class="clear" onclick="clearData()"> Clear</button>
+        </div>
+    </form>
+    <hr>
+    <h2>Registered Student</h2>
+    <div id="output">
+        No student registered yet.
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
